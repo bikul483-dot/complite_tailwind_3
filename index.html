@@ -12,28 +12,28 @@
 </head>
 
 <body>
-    <nav class="w-10/11 mx-auto flex items-center justify-between py-3">
+    <nav class="w-10/11 mx-auto flex items-center justify-between py-3 ">
         <div>
             <div class="flex items-center gap-10">
                 <img src="image/GREENMIND.png" alt="" class="mr-20" />
-                <a class="text-xl font-semibold text-gray-500 hover:text-black hover:underline" href="#">Home</a>
-                <a class="text-xl font-semibold text-gray-500 hover:text-black hover:underline" href="#">Product</a>
-                <a class="text-xl font-semibold text-gray-500 hover:text-black hover:underline" href="#">Contact</a>
+                <a class="hidden lg:block text-xl font-semibold text-gray-500 hover:text-black hover:underline" href="#">Home</a>
+                <a class="hidden lg:block text-xl font-semibold text-gray-500 hover:text-black hover:underline" href="#">Product</a>
+                <a class="hidden lg:block text-xl font-semibold text-gray-500 hover:text-black hover:underline" href="#">Contact</a>
             </div>
         </div>
         <div class="flex items-center gap-10">
-            <img src="image/Cart.png" alt="" />
-            <img src="image/Person.png" alt="" />
-            <div class="h-8 w-0.5 bg-black"></div>
+            <img class="" src="image/Cart.png" alt="" />
+            <img class="hidden lg:block" src="image/Person.png" alt="" />
+            <div class="h-8 w-0.5 bg-black hidden sm:block"></div>
             <img src="image/FilterRight.png" alt="" />
         </div>
     </nav>
 
     <!-- baner section  -->
     <section
-        class="w-10/11 mx-auto flex flex-col md:flex-row items-center justify-between gap-20 bg-[#C1DCDC] rounded-2xl my-5">
+        class="w-10/11 mx-auto flex flex-col md:flex-row items-center justify-between gap-20 bg-[#C1DCDC] rounded-2xl my-5 relative">
         <div class="w-full md:w-1/2 lg:w-1/3 p-10">
-            <h1 class="text-6xl font-extrabold">Buy your dream plants</h1>
+            <h1 class="text-6xl font-extrabold ">Buy your dream plants</h1>
             <div class=" flex justify-between items-center mt-4">
                 <p class="flex flex-col"><span class="font-semibold text-4xl">50+</span><span
                         class="text-lg font-bold">Plant species</span></p>
@@ -48,10 +48,12 @@
                     class="fa-solid fa-magnifying-glass absolute top-1/2 right-2 transform -translate-y-1/2 text-gray-500 bg-[#C1DCDC] rounded-xl p-3 pr-8"></i>
             </div>
         </div>
-        <div class="relative  md:w-1/2 lg:w-1/5 ">
-            <!-- <img src="image/Rectangle 2.png" class="absolute top-0 bottom-10 right-3" alt=""> -->
-            <img class="" src="image/unsplash_cLaaxa4DSnc-removebg-preview 1.png" alt="" />
+        <div class="w-full md:w-[500px] lg:w-1/2.5">
+            <img class="w-full" src="image/banar_imag.png" alt="" />
         </div>
+    
+        <img class="absolute top-2 right-6 w-32 hidden lg:block" src="image/Vector 187.png" alt="">
+        <img class="absolute bottom-7 hidden lg:block xl:right-1/3 lg:right-2/4 lg:w-36 xl:w-auto" src="image/Vector 186.png" alt="">
     </section>
 
     <!-- product section  -->
